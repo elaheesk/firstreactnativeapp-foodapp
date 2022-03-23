@@ -10,7 +10,6 @@ import { useEffect } from "react";
 import useRestaurants from "../hooks/useRestaurants";
 
 import RestaurantItem from "./RestaurantItem";
-// import { withNavigation } from "react-navigation";
 
 export default function Restaurants({ term }) {
   const [{ data, loading, error }, searchRestaurants] = useRestaurants(term);
@@ -49,10 +48,3 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
   },
 });
-
-// export default withNavigation(Restaurants);
-//Client ID
-//1fTdvyCGXKhKA2To0RL_kQ
-
-//API Key
-//dDZAKXinAjcN1nOQEvi9zvYtRjDqGc8JVDUJuGEETCUbsyUhpCzBnmOMqRGx4tdxQumPZWabUkAhRK5tEJ605xquqah7GcMoxg-RbMuibeE4gtY1E4EdAkhPiRg6YnYx

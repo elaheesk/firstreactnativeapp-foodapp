@@ -1,10 +1,7 @@
 import { View, Image, Text, StyleSheet } from "react-native";
-// import { withNavigation } from "react-navigation";
-// import { TouchableOpacity } from "react-native";
 import { elevation } from "../common/styles";
 export default function RestaurantItem({ restaurant }) {
   return (
-    // <TouchableOpacity onPress={() => navigation.navigate("RestaurantScreen")}>
     <View style={[styles.elevation, styles.container]}>
       <Image style={styles.image} source={{ uri: restaurant.image_url }} />
       <View style={styles.infoContainer}>
@@ -15,7 +12,6 @@ export default function RestaurantItem({ restaurant }) {
         </View>
       </View>
     </View>
-    // </TouchableOpacity>
   );
 }
 const styles = StyleSheet.create({
